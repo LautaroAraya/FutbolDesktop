@@ -39,6 +39,7 @@
             // 
             // dataGridViewEntrenadores
             // 
+            dataGridViewEntrenadores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewEntrenadores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewEntrenadores.Location = new Point(81, 41);
             dataGridViewEntrenadores.Name = "dataGridViewEntrenadores";

@@ -30,7 +30,7 @@
         {
             CancelarBtn = new FontAwesome.Sharp.IconButton();
             AgregarBtn = new FontAwesome.Sharp.IconButton();
-            textBox2 = new TextBox();
+            txtNombre = new TextBox();
             label2 = new Label();
             SuspendLayout();
             // 
@@ -48,6 +48,7 @@
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
             CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.Click += CancelarBtn_Click;
             // 
             // AgregarBtn
             // 
@@ -62,13 +63,14 @@
             AgregarBtn.TabIndex = 16;
             AgregarBtn.Text = "Agregar";
             AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.Click += AgregarBtn_Click;
             // 
-            // textBox2
+            // txtNombre
             // 
-            textBox2.Location = new Point(266, 214);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(324, 27);
-            textBox2.TabIndex = 15;
+            txtNombre.Location = new Point(266, 214);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(324, 27);
+            txtNombre.TabIndex = 15;
             // 
             // label2
             // 
@@ -86,7 +88,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(CancelarBtn);
             Controls.Add(AgregarBtn);
-            Controls.Add(textBox2);
+            Controls.Add(txtNombre);
             Controls.Add(label2);
             Name = "AgregarEditarLigas";
             Text = "Agregar/Editar Ligas";
@@ -98,7 +100,7 @@
 
         private FontAwesome.Sharp.IconButton CancelarBtn;
         private FontAwesome.Sharp.IconButton AgregarBtn;
-        private TextBox textBox2;
+        private TextBox txtNombre;
         private Label label2;
     }
 }

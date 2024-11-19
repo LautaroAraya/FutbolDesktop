@@ -40,7 +40,7 @@ namespace FutbolDesktop.Views.Commons.Entrenadores
             }
             else
             {
-                MessageBox.Show("No se encontró el cliente con el ID especificado.");
+                MessageBox.Show("No se encontró el Entrenador con el ID especificado.");
             }
         }
 

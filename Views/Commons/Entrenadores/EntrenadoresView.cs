@@ -35,16 +35,16 @@ namespace FutbolDesktop.Views
 
         private void AgregarBtn_Click(object sender, EventArgs e)
         {
-            AgregarEditarEntrenadores aagregarEditarEntrenadores = new AgregarEditarEntrenadores();
-            aagregarEditarEntrenadores.ShowDialog();
+            AgregarEditarEntrenadores agregarEditarEntrenadores = new AgregarEditarEntrenadores();
+            agregarEditarEntrenadores.ShowDialog();
             CargarGrilla();
         }
 
         private void EditarBtn_Click(object sender, EventArgs e)
         {
             var idEditar = (int)dataGridViewEntrenadores.CurrentRow.Cells[0].Value;
-            AgregarEditarEntrenadores aagregarEditarEntrenadores = new AgregarEditarEntrenadores(idEditar);
-            aagregarEditarEntrenadores.ShowDialog();
+            AgregarEditarEntrenadores agregarEditarEntrenadores = new AgregarEditarEntrenadores(idEditar);
+            agregarEditarEntrenadores.ShowDialog();
             CargarGrilla();
 
         }

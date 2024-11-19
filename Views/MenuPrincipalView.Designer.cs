@@ -44,12 +44,13 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.Dock = DockStyle.Left;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { BtnIconInicio, ClubBtn, SalirBtn });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(156, 450);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -59,7 +60,7 @@
             BtnIconInicio.IconColor = Color.Black;
             BtnIconInicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnIconInicio.Name = "BtnIconInicio";
-            BtnIconInicio.Size = new Size(79, 24);
+            BtnIconInicio.Size = new Size(143, 24);
             BtnIconInicio.Text = "Inicio";
             // 
             // ClubBtn
@@ -69,7 +70,7 @@
             ClubBtn.IconColor = Color.Black;
             ClubBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             ClubBtn.Name = "ClubBtn";
-            ClubBtn.Size = new Size(73, 24);
+            ClubBtn.Size = new Size(143, 24);
             ClubBtn.Text = "Club";
             // 
             // JugadoresBtn
@@ -129,7 +130,7 @@
             SalirBtn.IconColor = Color.Black;
             SalirBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SalirBtn.Name = "SalirBtn";
-            SalirBtn.Size = new Size(72, 24);
+            SalirBtn.Size = new Size(143, 24);
             SalirBtn.Text = "Salir";
             // 
             // SalirSistemaBtn
@@ -138,7 +139,7 @@
             SalirSistemaBtn.IconColor = Color.Black;
             SalirSistemaBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SalirSistemaBtn.Name = "SalirSistemaBtn";
-            SalirSistemaBtn.Size = new Size(224, 26);
+            SalirSistemaBtn.Size = new Size(202, 26);
             SalirSistemaBtn.Text = "Salir del Sistema";
             SalirSistemaBtn.Click += SalirSistemaBtn_Click;
             // 

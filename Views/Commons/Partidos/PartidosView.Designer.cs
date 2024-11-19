@@ -48,6 +48,7 @@
             // 
             // dataGridViewPartidos
             // 
+            dataGridViewPartidos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewPartidos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewPartidos.Location = new Point(59, 51);
             dataGridViewPartidos.Name = "dataGridViewPartidos";
@@ -69,6 +70,7 @@
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
             CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.Click += CancelarBtn_Click;
             // 
             // EliminarBtn
             // 
@@ -83,6 +85,7 @@
             EliminarBtn.TabIndex = 16;
             EliminarBtn.Text = "Eliminar";
             EliminarBtn.UseVisualStyleBackColor = true;
+            EliminarBtn.Click += EliminarBtn_Click;
             // 
             // EditarBtn
             // 
@@ -97,6 +100,7 @@
             EditarBtn.TabIndex = 15;
             EditarBtn.Text = "Editar";
             EditarBtn.UseVisualStyleBackColor = true;
+            EditarBtn.Click += EditarBtn_Click;
             // 
             // AgregarBtn
             // 
@@ -111,6 +115,7 @@
             AgregarBtn.TabIndex = 14;
             AgregarBtn.Text = "Agregar";
             AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.Click += AgregarBtn_Click;
             // 
             // PartidosView
             // 

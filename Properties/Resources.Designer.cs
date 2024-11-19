@@ -61,6 +61,26 @@ namespace FutbolDesktop.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1330044 {
+            get {
+                object obj = ResourceManager.GetObject("1330044", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoBlazor {
+            get {
+                object obj = ResourceManager.GetObject("fondoBlazor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a https://backfutbol.azurewebsites.net/api/.
         /// </summary>
         internal static string UrlApi {

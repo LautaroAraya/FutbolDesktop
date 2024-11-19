@@ -28,22 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox3 = new TextBox();
             label3 = new Label();
             CancelarBtn = new FontAwesome.Sharp.IconButton();
             AgregarBtn = new FontAwesome.Sharp.IconButton();
-            textBox2 = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
             label1 = new Label();
+            cmbLocal = new ComboBox();
+            cmbVisitante = new ComboBox();
+            dateTimeFecha = new DateTimePicker();
             SuspendLayout();
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(278, 177);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(324, 27);
-            textBox3.TabIndex = 23;
             // 
             // label3
             // 
@@ -68,6 +61,7 @@
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
             CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.Click += CancelarBtn_Click;
             // 
             // AgregarBtn
             // 
@@ -82,13 +76,7 @@
             AgregarBtn.TabIndex = 20;
             AgregarBtn.Text = "Agregar";
             AgregarBtn.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(278, 252);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(324, 27);
-            textBox2.TabIndex = 19;
+            AgregarBtn.Click += AgregarBtn_Click;
             // 
             // label2
             // 
@@ -99,13 +87,6 @@
             label2.TabIndex = 18;
             label2.Text = "Fecha:";
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(278, 105);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(324, 27);
-            textBox1.TabIndex = 17;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -115,18 +96,41 @@
             label1.TabIndex = 16;
             label1.Text = "Equipo Local:";
             // 
+            // cmbLocal
+            // 
+            cmbLocal.FormattingEnabled = true;
+            cmbLocal.Location = new Point(278, 112);
+            cmbLocal.Name = "cmbLocal";
+            cmbLocal.Size = new Size(324, 28);
+            cmbLocal.TabIndex = 23;
+            // 
+            // cmbVisitante
+            // 
+            cmbVisitante.FormattingEnabled = true;
+            cmbVisitante.Location = new Point(278, 184);
+            cmbVisitante.Name = "cmbVisitante";
+            cmbVisitante.Size = new Size(324, 28);
+            cmbVisitante.TabIndex = 24;
+            // 
+            // dateTimeFecha
+            // 
+            dateTimeFecha.Location = new Point(278, 268);
+            dateTimeFecha.Name = "dateTimeFecha";
+            dateTimeFecha.Size = new Size(324, 27);
+            dateTimeFecha.TabIndex = 25;
+            // 
             // AgregarEditarPartidos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox3);
+            Controls.Add(dateTimeFecha);
+            Controls.Add(cmbVisitante);
+            Controls.Add(cmbLocal);
             Controls.Add(label3);
             Controls.Add(CancelarBtn);
             Controls.Add(AgregarBtn);
-            Controls.Add(textBox2);
             Controls.Add(label2);
-            Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "AgregarEditarPartidos";
             Text = "Agregar/Editar Partidos";
@@ -135,14 +139,13 @@
         }
 
         #endregion
-
-        private TextBox textBox3;
         private Label label3;
         private FontAwesome.Sharp.IconButton CancelarBtn;
         private FontAwesome.Sharp.IconButton AgregarBtn;
-        private TextBox textBox2;
         private Label label2;
-        private TextBox textBox1;
         private Label label1;
+        private ComboBox cmbLocal;
+        private ComboBox cmbVisitante;
+        private DateTimePicker dateTimeFecha;
     }
 }
