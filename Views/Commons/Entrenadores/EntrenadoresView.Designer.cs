@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntrenadoresView));
             dataGridViewEntrenadores = new DataGridView();
             label1 = new Label();
             AgregarBtn = new FontAwesome.Sharp.IconButton();
@@ -58,21 +59,28 @@
             // 
             // AgregarBtn
             // 
+            AgregarBtn.BackColor = Color.SpringGreen;
+            AgregarBtn.FlatAppearance.BorderColor = Color.LimeGreen;
+            AgregarBtn.FlatAppearance.BorderSize = 0;
+            AgregarBtn.FlatStyle = FlatStyle.Flat;
             AgregarBtn.IconChar = FontAwesome.Sharp.IconChar.File;
             AgregarBtn.IconColor = Color.Black;
-            AgregarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            AgregarBtn.IconFont = FontAwesome.Sharp.IconFont.Regular;
             AgregarBtn.IconSize = 18;
             AgregarBtn.ImageAlign = ContentAlignment.MiddleLeft;
             AgregarBtn.Location = new Point(104, 444);
+            AgregarBtn.Margin = new Padding(0);
             AgregarBtn.Name = "AgregarBtn";
             AgregarBtn.Size = new Size(109, 29);
             AgregarBtn.TabIndex = 2;
             AgregarBtn.Text = "Agregar";
-            AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.UseVisualStyleBackColor = false;
             AgregarBtn.Click += AgregarBtn_Click;
             // 
             // EditarBtn
             // 
+            EditarBtn.BackColor = Color.DeepSkyBlue;
+            EditarBtn.FlatStyle = FlatStyle.Flat;
             EditarBtn.IconChar = FontAwesome.Sharp.IconChar.Edit;
             EditarBtn.IconColor = Color.Black;
             EditarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -83,11 +91,13 @@
             EditarBtn.Size = new Size(109, 29);
             EditarBtn.TabIndex = 3;
             EditarBtn.Text = "Editar";
-            EditarBtn.UseVisualStyleBackColor = true;
+            EditarBtn.UseVisualStyleBackColor = false;
             EditarBtn.Click += EditarBtn_Click;
             // 
             // EliminarBtn
             // 
+            EliminarBtn.BackColor = Color.LightCoral;
+            EliminarBtn.FlatStyle = FlatStyle.Flat;
             EliminarBtn.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             EliminarBtn.IconColor = Color.Black;
             EliminarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -98,11 +108,13 @@
             EliminarBtn.Size = new Size(109, 29);
             EliminarBtn.TabIndex = 4;
             EliminarBtn.Text = "Eliminar";
-            EliminarBtn.UseVisualStyleBackColor = true;
+            EliminarBtn.UseVisualStyleBackColor = false;
             EliminarBtn.Click += EliminarBtn_Click;
             // 
             // CancelarBtn
             // 
+            CancelarBtn.BackColor = Color.RosyBrown;
+            CancelarBtn.FlatStyle = FlatStyle.Flat;
             CancelarBtn.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
             CancelarBtn.IconColor = Color.Black;
             CancelarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -114,13 +126,14 @@
             CancelarBtn.TabIndex = 5;
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
-            CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.UseVisualStyleBackColor = false;
             CancelarBtn.Click += CancelarBtn_Click;
             // 
             // EntrenadoresView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(992, 504);
             Controls.Add(CancelarBtn);
             Controls.Add(EliminarBtn);
@@ -128,7 +141,9 @@
             Controls.Add(AgregarBtn);
             Controls.Add(label1);
             Controls.Add(dataGridViewEntrenadores);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "EntrenadoresView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Entrenadores";
             ((System.ComponentModel.ISupportInitialize)dataGridViewEntrenadores).EndInit();
             ResumeLayout(false);

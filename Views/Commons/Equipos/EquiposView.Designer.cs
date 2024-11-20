@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquiposView));
             label1 = new Label();
             dataGridViewEquipos = new DataGridView();
             btnCancelar = new FontAwesome.Sharp.IconButton();
@@ -58,6 +59,8 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = Color.RosyBrown;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
             btnCancelar.IconColor = Color.Black;
             btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -69,11 +72,13 @@
             btnCancelar.TabIndex = 15;
             btnCancelar.Text = "Cancelar";
             btnCancelar.TextAlign = ContentAlignment.MiddleRight;
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // btnEliminar
             // 
+            btnEliminar.BackColor = Color.LightCoral;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             btnEliminar.IconColor = Color.Black;
             btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -84,11 +89,13 @@
             btnEliminar.Size = new Size(109, 29);
             btnEliminar.TabIndex = 14;
             btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.UseVisualStyleBackColor = false;
             btnEliminar.Click += btnEliminar_Click;
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.DeepSkyBlue;
+            btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.IconChar = FontAwesome.Sharp.IconChar.Edit;
             btnEditar.IconColor = Color.Black;
             btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -99,11 +106,13 @@
             btnEditar.Size = new Size(109, 29);
             btnEditar.TabIndex = 13;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
             // btnAgregar
             // 
+            btnAgregar.BackColor = Color.SpringGreen;
+            btnAgregar.FlatStyle = FlatStyle.Flat;
             btnAgregar.IconChar = FontAwesome.Sharp.IconChar.File;
             btnAgregar.IconColor = Color.Black;
             btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -114,13 +123,14 @@
             btnAgregar.Size = new Size(109, 29);
             btnAgregar.TabIndex = 12;
             btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.UseVisualStyleBackColor = false;
             btnAgregar.Click += btnAgregar_Click;
             // 
             // EquiposView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(992, 504);
             Controls.Add(btnCancelar);
             Controls.Add(btnEliminar);
@@ -128,7 +138,9 @@
             Controls.Add(btnAgregar);
             Controls.Add(label1);
             Controls.Add(dataGridViewEquipos);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "EquiposView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Equipos";
             ((System.ComponentModel.ISupportInitialize)dataGridViewEquipos).EndInit();
             ResumeLayout(false);

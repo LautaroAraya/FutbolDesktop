@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarEditarLigas));
             CancelarBtn = new FontAwesome.Sharp.IconButton();
             AgregarBtn = new FontAwesome.Sharp.IconButton();
             txtNombre = new TextBox();
@@ -36,6 +37,8 @@
             // 
             // CancelarBtn
             // 
+            CancelarBtn.BackColor = Color.LightCoral;
+            CancelarBtn.FlatStyle = FlatStyle.Flat;
             CancelarBtn.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
             CancelarBtn.IconColor = Color.Black;
             CancelarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -47,11 +50,13 @@
             CancelarBtn.TabIndex = 17;
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
-            CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.UseVisualStyleBackColor = false;
             CancelarBtn.Click += CancelarBtn_Click;
             // 
             // AgregarBtn
             // 
+            AgregarBtn.BackColor = Color.SpringGreen;
+            AgregarBtn.FlatStyle = FlatStyle.Flat;
             AgregarBtn.IconChar = FontAwesome.Sharp.IconChar.File;
             AgregarBtn.IconColor = Color.Black;
             AgregarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -62,12 +67,12 @@
             AgregarBtn.Size = new Size(109, 29);
             AgregarBtn.TabIndex = 16;
             AgregarBtn.Text = "Agregar";
-            AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.UseVisualStyleBackColor = false;
             AgregarBtn.Click += AgregarBtn_Click;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(266, 214);
+            txtNombre.Location = new Point(266, 158);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(324, 27);
             txtNombre.TabIndex = 15;
@@ -75,7 +80,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(106, 221);
+            label2.Location = new Point(106, 165);
             label2.Name = "label2";
             label2.Size = new Size(136, 20);
             label2.TabIndex = 14;
@@ -85,12 +90,15 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 450);
             Controls.Add(CancelarBtn);
             Controls.Add(AgregarBtn);
             Controls.Add(txtNombre);
             Controls.Add(label2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AgregarEditarLigas";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Agregar/Editar Ligas";
             ResumeLayout(false);
             PerformLayout();

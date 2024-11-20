@@ -36,6 +36,8 @@
             btnIngresar = new FontAwesome.Sharp.IconButton();
             label2 = new Label();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // checkContra
@@ -51,21 +53,22 @@
             // 
             // txtContraseña
             // 
-            txtContraseña.Location = new Point(164, 79);
+            txtContraseña.Location = new Point(111, 79);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(335, 27);
             txtContraseña.TabIndex = 17;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(164, 18);
+            txtEmail.Location = new Point(111, 18);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(339, 27);
             txtEmail.TabIndex = 16;
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = Color.FromArgb(255, 128, 128);
+            btnCancelar.BackColor = Color.LightCoral;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.IconChar = FontAwesome.Sharp.IconChar.CircleRight;
             btnCancelar.IconColor = Color.Black;
             btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Regular;
@@ -81,13 +84,15 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.BackColor = Color.FromArgb(128, 255, 128);
+            btnIngresar.BackColor = Color.SpringGreen;
+            btnIngresar.FlatStyle = FlatStyle.Flat;
             btnIngresar.IconChar = FontAwesome.Sharp.IconChar.User;
             btnIngresar.IconColor = Color.Black;
             btnIngresar.IconFont = FontAwesome.Sharp.IconFont.Regular;
             btnIngresar.IconSize = 24;
             btnIngresar.ImageAlign = ContentAlignment.MiddleLeft;
             btnIngresar.Location = new Point(67, 178);
+            btnIngresar.Margin = new Padding(0);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(150, 40);
             btnIngresar.TabIndex = 14;
@@ -98,7 +103,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 86);
+            label2.Location = new Point(19, 86);
             label2.Name = "label2";
             label2.Size = new Size(86, 20);
             label2.TabIndex = 13;
@@ -113,11 +118,23 @@
             label1.TabIndex = 12;
             label1.Text = "Email:";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._431030374_969421444925969_1909409229281767033_n;
+            pictureBox1.Location = new Point(564, 21);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(150, 135);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 19;
+            pictureBox1.TabStop = false;
+            // 
             // InciarSesionView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(519, 228);
+            BackColor = SystemColors.ControlDark;
+            ClientSize = new Size(726, 228);
+            Controls.Add(pictureBox1);
             Controls.Add(checkContra);
             Controls.Add(txtContraseña);
             Controls.Add(txtEmail);
@@ -129,6 +146,7 @@
             Name = "InciarSesionView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inciar Sesion";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -142,5 +160,6 @@
         private FontAwesome.Sharp.IconButton btnIngresar;
         private Label label2;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }

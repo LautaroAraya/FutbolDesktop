@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarEditarJugadores));
             CancelarBtn = new FontAwesome.Sharp.IconButton();
             AgregarBtn = new FontAwesome.Sharp.IconButton();
             txtNombre = new TextBox();
@@ -40,6 +41,8 @@
             // 
             // CancelarBtn
             // 
+            CancelarBtn.BackColor = Color.LightCoral;
+            CancelarBtn.FlatStyle = FlatStyle.Flat;
             CancelarBtn.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
             CancelarBtn.IconColor = Color.Black;
             CancelarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -51,11 +54,13 @@
             CancelarBtn.TabIndex = 13;
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
-            CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.UseVisualStyleBackColor = false;
             CancelarBtn.Click += CancelarBtn_Click;
             // 
             // AgregarBtn
             // 
+            AgregarBtn.BackColor = Color.SpringGreen;
+            AgregarBtn.FlatStyle = FlatStyle.Flat;
             AgregarBtn.IconChar = FontAwesome.Sharp.IconChar.File;
             AgregarBtn.IconColor = Color.Black;
             AgregarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -66,7 +71,7 @@
             AgregarBtn.Size = new Size(109, 29);
             AgregarBtn.TabIndex = 12;
             AgregarBtn.Text = "Agregar";
-            AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.UseVisualStyleBackColor = false;
             AgregarBtn.Click += AgregarBtn_Click;
             // 
             // txtNombre
@@ -121,6 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 450);
             Controls.Add(txtPosicion);
             Controls.Add(label3);
@@ -130,7 +136,9 @@
             Controls.Add(label2);
             Controls.Add(txtNombre);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AgregarEditarJugadores";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Agregar/Editar Jugadores";
             ResumeLayout(false);
             PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LigasView));
             label1 = new Label();
             dataGridViewLigas = new DataGridView();
             CancelarBtn = new FontAwesome.Sharp.IconButton();
@@ -48,6 +49,7 @@
             // 
             // dataGridViewLigas
             // 
+            dataGridViewLigas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewLigas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewLigas.Location = new Point(59, 51);
             dataGridViewLigas.Name = "dataGridViewLigas";
@@ -57,6 +59,8 @@
             // 
             // CancelarBtn
             // 
+            CancelarBtn.BackColor = Color.RosyBrown;
+            CancelarBtn.FlatStyle = FlatStyle.Flat;
             CancelarBtn.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
             CancelarBtn.IconColor = Color.Black;
             CancelarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -68,11 +72,13 @@
             CancelarBtn.TabIndex = 23;
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
-            CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.UseVisualStyleBackColor = false;
             CancelarBtn.Click += CancelarBtn_Click;
             // 
             // EliminarBtn
             // 
+            EliminarBtn.BackColor = Color.LightCoral;
+            EliminarBtn.FlatStyle = FlatStyle.Flat;
             EliminarBtn.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             EliminarBtn.IconColor = Color.Black;
             EliminarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -83,11 +89,13 @@
             EliminarBtn.Size = new Size(109, 29);
             EliminarBtn.TabIndex = 22;
             EliminarBtn.Text = "Eliminar";
-            EliminarBtn.UseVisualStyleBackColor = true;
+            EliminarBtn.UseVisualStyleBackColor = false;
             EliminarBtn.Click += EliminarBtn_Click;
             // 
             // EditarBtn
             // 
+            EditarBtn.BackColor = Color.DeepSkyBlue;
+            EditarBtn.FlatStyle = FlatStyle.Flat;
             EditarBtn.IconChar = FontAwesome.Sharp.IconChar.Edit;
             EditarBtn.IconColor = Color.Black;
             EditarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -98,11 +106,13 @@
             EditarBtn.Size = new Size(109, 29);
             EditarBtn.TabIndex = 21;
             EditarBtn.Text = "Editar";
-            EditarBtn.UseVisualStyleBackColor = true;
+            EditarBtn.UseVisualStyleBackColor = false;
             EditarBtn.Click += EditarBtn_Click;
             // 
             // AgregarBtn
             // 
+            AgregarBtn.BackColor = Color.SpringGreen;
+            AgregarBtn.FlatStyle = FlatStyle.Flat;
             AgregarBtn.IconChar = FontAwesome.Sharp.IconChar.File;
             AgregarBtn.IconColor = Color.Black;
             AgregarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -113,13 +123,14 @@
             AgregarBtn.Size = new Size(109, 29);
             AgregarBtn.TabIndex = 20;
             AgregarBtn.Text = "Agregar";
-            AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.UseVisualStyleBackColor = false;
             AgregarBtn.Click += AgregarBtn_Click;
             // 
             // LigasView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(992, 504);
             Controls.Add(CancelarBtn);
             Controls.Add(EliminarBtn);
@@ -127,7 +138,9 @@
             Controls.Add(AgregarBtn);
             Controls.Add(label1);
             Controls.Add(dataGridViewLigas);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LigasView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LigaView";
             ((System.ComponentModel.ISupportInitialize)dataGridViewLigas).EndInit();
             ResumeLayout(false);

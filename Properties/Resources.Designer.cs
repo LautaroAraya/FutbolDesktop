@@ -73,9 +73,49 @@ namespace FutbolDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _431030374_969421444925969_1909409229281767033_n {
+            get {
+                object obj = ResourceManager.GetObject("431030374_969421444925969_1909409229281767033_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6e1554fc76f7bb8ad1c67451d29ada93 {
+            get {
+                object obj = ResourceManager.GetObject("6e1554fc76f7bb8ad1c67451d29ada93", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancha {
+            get {
+                object obj = ResourceManager.GetObject("cancha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondoBlazor {
             get {
                 object obj = ResourceManager.GetObject("fondoBlazor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb_1920_510026 {
+            get {
+                object obj = ResourceManager.GetObject("thumb-1920-510026", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

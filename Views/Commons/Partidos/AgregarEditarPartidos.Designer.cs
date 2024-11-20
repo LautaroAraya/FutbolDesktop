@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarEditarPartidos));
             label3 = new Label();
             CancelarBtn = new FontAwesome.Sharp.IconButton();
             AgregarBtn = new FontAwesome.Sharp.IconButton();
@@ -49,6 +50,8 @@
             // 
             // CancelarBtn
             // 
+            CancelarBtn.BackColor = Color.LightCoral;
+            CancelarBtn.FlatStyle = FlatStyle.Flat;
             CancelarBtn.IconChar = FontAwesome.Sharp.IconChar.XmarkCircle;
             CancelarBtn.IconColor = Color.Black;
             CancelarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -60,11 +63,13 @@
             CancelarBtn.TabIndex = 21;
             CancelarBtn.Text = "Cancelar";
             CancelarBtn.TextAlign = ContentAlignment.MiddleRight;
-            CancelarBtn.UseVisualStyleBackColor = true;
+            CancelarBtn.UseVisualStyleBackColor = false;
             CancelarBtn.Click += CancelarBtn_Click;
             // 
             // AgregarBtn
             // 
+            AgregarBtn.BackColor = Color.SpringGreen;
+            AgregarBtn.FlatStyle = FlatStyle.Flat;
             AgregarBtn.IconChar = FontAwesome.Sharp.IconChar.File;
             AgregarBtn.IconColor = Color.Black;
             AgregarBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -75,7 +80,7 @@
             AgregarBtn.Size = new Size(109, 29);
             AgregarBtn.TabIndex = 20;
             AgregarBtn.Text = "Agregar";
-            AgregarBtn.UseVisualStyleBackColor = true;
+            AgregarBtn.UseVisualStyleBackColor = false;
             AgregarBtn.Click += AgregarBtn_Click;
             // 
             // label2
@@ -123,6 +128,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 450);
             Controls.Add(dateTimeFecha);
             Controls.Add(cmbVisitante);
@@ -132,7 +138,9 @@
             Controls.Add(AgregarBtn);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AgregarEditarPartidos";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Agregar/Editar Partidos";
             ResumeLayout(false);
             PerformLayout();
