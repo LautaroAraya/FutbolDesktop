@@ -43,21 +43,23 @@ namespace FutbolDesktop.Views.Commons.Equipos
         }
         public Agregar_EditarEquipos(int idEditar)
         {
+            InitializeComponent();
+            CargarEntrenador();
             CargarDatosAEditar(idEditar);
         }
 
-        private void CargarDatosAEditar(int idEditar)
+        private async void CargarDatosAEditar(int idEditar)
         {
-            equipo = equipoService.GetByIdAsync(idEditar).Result;
             try
             {
+                equipo = await equipoService.GetByIdAsync(idEditar);
                 txtNombre.Text = equipo.Nombre;
                 txtEstadio.Text = equipo.Estadio;
                 cmbEntrenadores.SelectedValue = equipo.EntrenadorId;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los datos" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al cargar los datos a editar" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

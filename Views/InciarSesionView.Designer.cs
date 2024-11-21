@@ -145,7 +145,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "InciarSesionView";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Inciar Sesion";
+            Text = "Iniciar Sesion";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

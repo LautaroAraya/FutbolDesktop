@@ -54,6 +54,7 @@ namespace FutbolDesktop.Views.Commons.Ligas
                 ligaService.UpdateAsync(Ligas);
             }
             MessageBox.Show("Liga agregada correctamente", "Liga", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void CancelarBtn_Click(object sender, EventArgs e)

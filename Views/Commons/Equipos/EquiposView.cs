@@ -18,15 +18,57 @@ namespace FutbolDesktop.Views
     public partial class EquiposView : Form
     {
         IGenericService<Equipo> equipoService = new GenericService<Equipo>();
+        IGenericService<Entrenador> entrenadorService = new GenericService<Entrenador>();
         public EquiposView()
         {
             InitializeComponent();
             CargarGrilla();
         }
 
-        private async Task CargarGrilla()
+        private async void CargarGrilla()
         {
-            dataGridViewEquipos.DataSource = await equipoService.GetAllAsync();
+            try
+            {
+                var equipos = await equipoService.GetAllAsync();
+                var equipoConDetalles = new List<dynamic>();
+
+                foreach (var equipo in equipos)
+                {
+                    var entrenador = await ObtenerEntrenadorPorIdAsync(equipo.EntrenadorId);
+
+                    // Agregar detalles al listado
+                    equipoConDetalles.Add(new
+                    {
+                        equipo.Id,
+                        equipo.Nombre,
+                        equipo.Estadio,
+                        Entrenador = entrenador?.Nombre ?? "Entrenador desconocido"
+                    });
+                }
+
+                // Asignar datos al DataGridView
+                dataGridViewEquipos.DataSource = null; // Limpiar para refrescar
+                dataGridViewEquipos.DataSource = equipoConDetalles;
+
+                // Configurar encabezados y diseño
+                dataGridViewEquipos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task<Entrenador> ObtenerEntrenadorPorIdAsync(int EntrenadorId)
+        {
+            try
+            {
+                return await entrenadorService.GetByIdAsync(EntrenadorId);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -41,11 +83,11 @@ namespace FutbolDesktop.Views
             }
         }
 
-        private async void btnAgregar_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
             Agregar_EditarEquipos agregarEditarEquipos = new Agregar_EditarEquipos();
             agregarEditarEquipos.ShowDialog();
-            await CargarGrilla();
+            CargarGrilla();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

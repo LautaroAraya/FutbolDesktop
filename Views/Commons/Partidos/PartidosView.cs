@@ -40,7 +40,7 @@ namespace FutbolDesktop.Views
                         partido.Id,
                         EquipoLocal = equipoLocal?.Nombre ?? "Equipo desconocido",
                         EquipoVisitante = equipoVisitante?.Nombre ?? "Equipo desconocido",
-                        Fecha = partido.Fecha.ToString("yyyy-MM-dd HH:mm") // Formato de fecha amigable
+                        Fecha = partido.Fecha.ToString("dd-MM-yyyy") // Formato de fecha amigable
                     });
                 }
 

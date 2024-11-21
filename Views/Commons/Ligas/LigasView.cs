@@ -32,6 +32,7 @@ namespace FutbolDesktop.Views
         {
             AgregarEditarLigas agregarEditarLigasView = new AgregarEditarLigas();
             agregarEditarLigasView.ShowDialog();
+            CargarGrilla();
         }
 
         private void EditarBtn_Click(object sender, EventArgs e)
@@ -39,6 +40,7 @@ namespace FutbolDesktop.Views
             var idEditar = (int)dataGridViewLigas.CurrentRow.Cells[0].Value;
             AgregarEditarLigas agregarEditarLigas = new AgregarEditarLigas(idEditar);
             agregarEditarLigas.ShowDialog();
+            CargarGrilla();
         }
 
         private void CancelarBtn_Click(object sender, EventArgs e)
