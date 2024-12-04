@@ -1,6 +1,7 @@
 ﻿using FutbolDesktop.Interface;
 using FutbolDesktop.Modelos;
 using FutbolDesktop.Service;
+using FutbolDesktop.Views.Commons.Equipos;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -119,6 +120,14 @@ namespace FutbolDesktop.Views.Commons.Partidos
             {
                 MessageBox.Show("Error al agregar el Partido: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void agregarEquipoBtn_Click(object sender, EventArgs e)
+        {
+            Agregar_EditarEquipos agregarEditarEquipos = new Agregar_EditarEquipos();
+            agregarEditarEquipos.ShowDialog();
+            CargarEquiposLocales();
+            CargarEquiposVisitantes();
         }
     }
 }

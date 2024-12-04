@@ -141,7 +141,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LigasView";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "LigaView";
+            Text = "Liga";
             ((System.ComponentModel.ISupportInitialize)dataGridViewLigas).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -99,7 +99,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AgregarEditarLigas";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Agregar/Editar Ligas";
+            Text = "Agregar Editar Ligas";
             ResumeLayout(false);
             PerformLayout();
         }

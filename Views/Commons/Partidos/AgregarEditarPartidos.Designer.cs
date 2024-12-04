@@ -37,12 +37,13 @@
             cmbLocal = new ComboBox();
             cmbVisitante = new ComboBox();
             dateTimeFecha = new DateTimePicker();
+            agregarEquipoBtn = new FontAwesome.Sharp.IconButton();
             SuspendLayout();
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(118, 184);
+            label3.Location = new Point(71, 184);
             label3.Name = "label3";
             label3.Size = new Size(120, 20);
             label3.TabIndex = 22;
@@ -95,7 +96,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(118, 112);
+            label1.Location = new Point(71, 112);
             label1.Name = "label1";
             label1.Size = new Size(98, 20);
             label1.TabIndex = 16;
@@ -104,7 +105,7 @@
             // cmbLocal
             // 
             cmbLocal.FormattingEnabled = true;
-            cmbLocal.Location = new Point(278, 112);
+            cmbLocal.Location = new Point(231, 112);
             cmbLocal.Name = "cmbLocal";
             cmbLocal.Size = new Size(324, 28);
             cmbLocal.TabIndex = 23;
@@ -112,7 +113,7 @@
             // cmbVisitante
             // 
             cmbVisitante.FormattingEnabled = true;
-            cmbVisitante.Location = new Point(278, 184);
+            cmbVisitante.Location = new Point(231, 184);
             cmbVisitante.Name = "cmbVisitante";
             cmbVisitante.Size = new Size(324, 28);
             cmbVisitante.TabIndex = 24;
@@ -124,12 +125,30 @@
             dateTimeFecha.Size = new Size(324, 27);
             dateTimeFecha.TabIndex = 25;
             // 
+            // agregarEquipoBtn
+            // 
+            agregarEquipoBtn.BackColor = SystemColors.ButtonHighlight;
+            agregarEquipoBtn.FlatStyle = FlatStyle.Flat;
+            agregarEquipoBtn.IconChar = FontAwesome.Sharp.IconChar.Users;
+            agregarEquipoBtn.IconColor = Color.Black;
+            agregarEquipoBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            agregarEquipoBtn.IconSize = 18;
+            agregarEquipoBtn.ImageAlign = ContentAlignment.MiddleLeft;
+            agregarEquipoBtn.Location = new Point(576, 149);
+            agregarEquipoBtn.Name = "agregarEquipoBtn";
+            agregarEquipoBtn.Size = new Size(156, 29);
+            agregarEquipoBtn.TabIndex = 26;
+            agregarEquipoBtn.Text = "Agregar Equipo";
+            agregarEquipoBtn.UseVisualStyleBackColor = false;
+            agregarEquipoBtn.Click += agregarEquipoBtn_Click;
+            // 
             // AgregarEditarPartidos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 450);
+            Controls.Add(agregarEquipoBtn);
             Controls.Add(dateTimeFecha);
             Controls.Add(cmbVisitante);
             Controls.Add(cmbLocal);
@@ -141,7 +160,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AgregarEditarPartidos";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Agregar/Editar Partidos";
+            Text = "Agregar Editar Partidos";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -155,5 +174,6 @@
         private ComboBox cmbLocal;
         private ComboBox cmbVisitante;
         private DateTimePicker dateTimeFecha;
+        private FontAwesome.Sharp.IconButton agregarEquipoBtn;
     }
 }

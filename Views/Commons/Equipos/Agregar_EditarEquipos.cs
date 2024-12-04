@@ -1,6 +1,7 @@
 ﻿using FutbolDesktop.Interface;
 using FutbolDesktop.Modelos;
 using FutbolDesktop.Service;
+using FutbolDesktop.Views.Commons.Entrenadores;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -92,6 +93,13 @@ namespace FutbolDesktop.Views.Commons.Equipos
         private void CancelarBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void agregarEntrenadorbtn_Click(object sender, EventArgs e)
+        {
+            AgregarEditarEntrenadores agregarEditarEntrenadores = new AgregarEditarEntrenadores();
+            agregarEditarEntrenadores.ShowDialog();
+            CargarEntrenador();
         }
     }
 }

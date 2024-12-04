@@ -99,7 +99,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AgregarEditarEntrenadores";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Agregar/Editar Entrenadores";
+            Text = "Agregar Editar Entrenadores";
             ResumeLayout(false);
             PerformLayout();
         }

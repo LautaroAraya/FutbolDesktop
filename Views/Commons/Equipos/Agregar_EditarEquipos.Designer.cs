@@ -37,12 +37,13 @@
             label2 = new Label();
             txtNombre = new TextBox();
             label1 = new Label();
+            agregarEntrenadorbtn = new FontAwesome.Sharp.IconButton();
             SuspendLayout();
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(105, 247);
+            label3.Location = new Point(59, 247);
             label3.Name = "label3";
             label3.Size = new Size(169, 20);
             label3.TabIndex = 23;
@@ -51,7 +52,7 @@
             // cmbEntrenadores
             // 
             cmbEntrenadores.FormattingEnabled = true;
-            cmbEntrenadores.Location = new Point(291, 239);
+            cmbEntrenadores.Location = new Point(243, 244);
             cmbEntrenadores.Name = "cmbEntrenadores";
             cmbEntrenadores.Size = new Size(324, 28);
             cmbEntrenadores.TabIndex = 22;
@@ -123,12 +124,30 @@
             label1.TabIndex = 16;
             label1.Text = "Nombre del Equipo:";
             // 
+            // agregarEntrenadorbtn
+            // 
+            agregarEntrenadorbtn.BackColor = SystemColors.ButtonHighlight;
+            agregarEntrenadorbtn.FlatStyle = FlatStyle.Flat;
+            agregarEntrenadorbtn.IconChar = FontAwesome.Sharp.IconChar.User;
+            agregarEntrenadorbtn.IconColor = Color.Black;
+            agregarEntrenadorbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            agregarEntrenadorbtn.IconSize = 18;
+            agregarEntrenadorbtn.ImageAlign = ContentAlignment.MiddleLeft;
+            agregarEntrenadorbtn.Location = new Point(595, 247);
+            agregarEntrenadorbtn.Name = "agregarEntrenadorbtn";
+            agregarEntrenadorbtn.Size = new Size(193, 29);
+            agregarEntrenadorbtn.TabIndex = 24;
+            agregarEntrenadorbtn.Text = "Agregar Entrenador";
+            agregarEntrenadorbtn.UseVisualStyleBackColor = false;
+            agregarEntrenadorbtn.Click += agregarEntrenadorbtn_Click;
+            // 
             // Agregar_EditarEquipos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 450);
+            Controls.Add(agregarEntrenadorbtn);
             Controls.Add(label3);
             Controls.Add(cmbEntrenadores);
             Controls.Add(CancelarBtn);
@@ -140,7 +159,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Agregar_EditarEquipos";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Agregar_EditarEquipos";
+            Text = "Agregar EditarEquipos";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -155,5 +174,6 @@
         private Label label2;
         private TextBox txtNombre;
         private Label label1;
+        private FontAwesome.Sharp.IconButton agregarEntrenadorbtn;
     }
 }
