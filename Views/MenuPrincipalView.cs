@@ -1,4 +1,5 @@
 ﻿using FutbolDesktop.Views;
+using FutbolDesktop.Views.Commons.Acerca_De;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,5 +54,10 @@ namespace FutbolDesktop
             Application.Exit();
         }
 
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            acercaDe acercaDeView = new acercaDe();
+            acercaDeView.Show();
+        }
     }
 }

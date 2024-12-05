@@ -41,6 +41,7 @@ namespace FutbolDesktop.Views.Commons.Partidos
                 cmbLocal.DataSource = equipos;
                 cmbLocal.DisplayMember = "Nombre";
                 cmbLocal.ValueMember = "Id";
+                cmbLocal.SelectedIndex = -1;
             }
             catch
             {
@@ -56,6 +57,7 @@ namespace FutbolDesktop.Views.Commons.Partidos
                 cmbVisitante.DataSource = equipos;
                 cmbVisitante.DisplayMember = "Nombre";
                 cmbVisitante.ValueMember = "Id";
+                cmbVisitante.SelectedIndex = -1;
             }
             catch
             {
@@ -129,5 +131,7 @@ namespace FutbolDesktop.Views.Commons.Partidos
             CargarEquiposLocales();
             CargarEquiposVisitantes();
         }
+
+
     }
 }

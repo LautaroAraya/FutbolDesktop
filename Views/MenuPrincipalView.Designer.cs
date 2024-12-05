@@ -39,6 +39,7 @@
             LigasBtn = new FontAwesome.Sharp.IconMenuItem();
             SalirBtn = new FontAwesome.Sharp.IconMenuItem();
             SalirSistemaBtn = new FontAwesome.Sharp.IconMenuItem();
+            acercaDeToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,11 +50,11 @@
             menuStrip1.Dock = DockStyle.Left;
             menuStrip1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { BtnIconInicio, ClubBtn, SalirBtn });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { BtnIconInicio, ClubBtn, SalirBtn, acercaDeToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
-            menuStrip1.Size = new Size(98, 450);
+            menuStrip1.Size = new Size(146, 450);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -65,7 +66,7 @@
             BtnIconInicio.IconColor = Color.Black;
             BtnIconInicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnIconInicio.Name = "BtnIconInicio";
-            BtnIconInicio.Size = new Size(91, 32);
+            BtnIconInicio.Size = new Size(139, 32);
             BtnIconInicio.Text = "Inicio";
             // 
             // ClubBtn
@@ -76,7 +77,7 @@
             ClubBtn.IconColor = Color.Black;
             ClubBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             ClubBtn.Name = "ClubBtn";
-            ClubBtn.Size = new Size(91, 32);
+            ClubBtn.Size = new Size(139, 32);
             ClubBtn.Text = "Club";
             // 
             // JugadoresBtn
@@ -85,7 +86,7 @@
             JugadoresBtn.IconColor = Color.Black;
             JugadoresBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             JugadoresBtn.Name = "JugadoresBtn";
-            JugadoresBtn.Size = new Size(224, 32);
+            JugadoresBtn.Size = new Size(213, 32);
             JugadoresBtn.Text = "Jugadores";
             JugadoresBtn.Click += JugadoresBtn_Click;
             // 
@@ -95,7 +96,7 @@
             EntrenadoresBtn.IconColor = Color.Black;
             EntrenadoresBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             EntrenadoresBtn.Name = "EntrenadoresBtn";
-            EntrenadoresBtn.Size = new Size(224, 32);
+            EntrenadoresBtn.Size = new Size(213, 32);
             EntrenadoresBtn.Text = "Entrenadores";
             EntrenadoresBtn.Click += EntrenadoresBtn_Click;
             // 
@@ -105,7 +106,7 @@
             EquiposBtn.IconColor = Color.Black;
             EquiposBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             EquiposBtn.Name = "EquiposBtn";
-            EquiposBtn.Size = new Size(224, 32);
+            EquiposBtn.Size = new Size(213, 32);
             EquiposBtn.Text = "Equipos";
             EquiposBtn.Click += EquiposBtn_Click;
             // 
@@ -115,7 +116,7 @@
             PartidosBtn.IconColor = Color.Black;
             PartidosBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             PartidosBtn.Name = "PartidosBtn";
-            PartidosBtn.Size = new Size(224, 32);
+            PartidosBtn.Size = new Size(213, 32);
             PartidosBtn.Text = "Partidos";
             PartidosBtn.Click += PartidosBtn_Click;
             // 
@@ -125,7 +126,7 @@
             LigasBtn.IconColor = Color.Black;
             LigasBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             LigasBtn.Name = "LigasBtn";
-            LigasBtn.Size = new Size(224, 32);
+            LigasBtn.Size = new Size(213, 32);
             LigasBtn.Text = "Ligas";
             LigasBtn.Click += LigasBtn_Click;
             // 
@@ -136,7 +137,7 @@
             SalirBtn.IconColor = Color.Black;
             SalirBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             SalirBtn.Name = "SalirBtn";
-            SalirBtn.Size = new Size(91, 32);
+            SalirBtn.Size = new Size(139, 32);
             SalirBtn.Text = "Salir";
             // 
             // SalirSistemaBtn
@@ -148,6 +149,16 @@
             SalirSistemaBtn.Size = new Size(241, 32);
             SalirSistemaBtn.Text = "Salir del Sistema";
             SalirSistemaBtn.Click += SalirSistemaBtn_Click;
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            acercaDeToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            acercaDeToolStripMenuItem.IconColor = Color.Black;
+            acercaDeToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            acercaDeToolStripMenuItem.Size = new Size(139, 32);
+            acercaDeToolStripMenuItem.Text = "Acerca de";
+            acercaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
             // 
             // MenuPrincipalView
             // 
@@ -179,5 +190,6 @@
         private FontAwesome.Sharp.IconMenuItem LigasBtn;
         private FontAwesome.Sharp.IconMenuItem SalirBtn;
         private FontAwesome.Sharp.IconMenuItem SalirSistemaBtn;
+        private FontAwesome.Sharp.IconMenuItem acercaDeToolStripMenuItem;
     }
 }

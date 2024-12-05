@@ -133,10 +133,13 @@
   <data name="thumb-1920-510026" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thumb-1920-510026.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="431030374_969421444925969_1909409229281767033_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\431030374_969421444925969_1909409229281767033_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="6e1554fc76f7bb8ad1c67451d29ada93" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6e1554fc76f7bb8ad1c67451d29ada93.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="431030374_969421444925969_1909409229281767033_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\431030374_969421444925969_1909409229281767033_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoISP20-mini-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoISP20-mini-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

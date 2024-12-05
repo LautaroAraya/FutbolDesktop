@@ -36,6 +36,7 @@ namespace FutbolDesktop.Views.Commons.Equipos
                 cmbEntrenadores.DataSource = entrenadores;
                 cmbEntrenadores.DisplayMember = "Nombre";
                 cmbEntrenadores.ValueMember = "Id";
+                cmbEntrenadores.SelectedIndex = -1;
             }
             catch (Exception ex)
             {

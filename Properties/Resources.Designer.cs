@@ -113,6 +113,16 @@ namespace FutbolDesktop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoISP20_mini_1 {
+            get {
+                object obj = ResourceManager.GetObject("logoISP20-mini-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thumb_1920_510026 {
             get {
                 object obj = ResourceManager.GetObject("thumb-1920-510026", resourceCulture);
